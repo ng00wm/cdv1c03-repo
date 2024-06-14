@@ -18,9 +18,9 @@ pipeline {
         }
     
         stage('5093616m-Stage3') {
-          
-            parallel {
-              echo '5093616m-Stage 3: Parallel: Security Testing' 
+            echo '5093616m-Stage 3: Parallel: Security Testing'
+
+            parallel { 
 
               stage('5093616m-Stage3A') {
                 steps {
