@@ -19,10 +19,10 @@ pipeline {
     
         stage('5093616m-Stage3') {
             parallel { 
-              echo '5093616m-Stage3'
                 stage('5093616m-Stage3A') {
                   steps {
-                      echo '5093616m-Stage 3A: SQL Injection (SQLI) Test Completed'
+                     echo '5093616m-Stage 3' 
+                     echo '5093616m-Stage 3A: SQL Injection (SQLI) Test Completed'
                   }
                 }
 
