@@ -18,7 +18,9 @@ pipeline {
         }
     
         stage('5093616m-Stage3') {
-            
+          steps {
+          echo '5093616m-Stage 3: Parallel: Security Testing'
+          }  
           parallel {
 
             stage('5093616m-Stage3A') {
@@ -32,9 +34,6 @@ pipeline {
                   echo '5093616m-Stage 3B: X-Site Scripting (XSS) Test Completed'
               }
             }
-          }
-          steps {
-          echo '5093616m-Stage 3: Parallel: Security Testing'
           }
         }
     
