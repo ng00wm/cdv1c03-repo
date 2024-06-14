@@ -10,29 +10,25 @@ pipeline {
                 echo '5093616m-Stage 1: Setup Release Environment Completed.'
             }
         }
-    }
-    stages {
+    
         stage('5093616m-Stage2') {
             steps {
                 echo '5093616m-Stage 2: Server Setup Completed.'
             }
         }
-    }
-    stages {
+    
         stage('5093616m-Stage3') {
             steps {
                 echo '5093616m-Stage 3: Parallel: Security Testing'
             }
         }
-    }
-    stages {
+    
         stage('5093616m-Stage4') {
             steps {
                 echo '5093616m-Stage 4: Approve to proceed to next phase.'
             }
         }
-    }
-    stages {
+    
         stage('5093616m-Stage5') {
             steps {
                 echo 'Stage5_5093616m: Ready for next phase'
