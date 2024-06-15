@@ -10,7 +10,7 @@ pipeline {
     
         stage('5093616m-Stage2') {
             steps {
-                sh 'docker exec 5093616m-server /bin/bash'
+                sh 'docker run -it -d -p 32500:80 --name 5093616m-server 5093616m-image'
                 echo '5093616m-Stage 2: Server Setup Completed.'
             }
         }
