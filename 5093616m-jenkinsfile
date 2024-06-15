@@ -11,6 +11,7 @@ pipeline {
         stage('5093616m-Stage2') {
             steps {
                 sh 'docker exec 5093616m-server /bin/bash'
+                sh 'service apache2 status'
                 echo '5093616m-Stage 2: Server Setup Completed.'
             }
         }
