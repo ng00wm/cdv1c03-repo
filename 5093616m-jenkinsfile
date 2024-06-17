@@ -41,7 +41,10 @@ pipeline {
         }
 
         stage('5093616m-Stage4') {
-            steps {
+            input {
+                  message 'Hello, 5093616m, premission to proceed to next step?'
+            }           
+            steps {                
                 echo '5093616m-Stage 4: Approve to proceed to next phase.'
             }
         }
