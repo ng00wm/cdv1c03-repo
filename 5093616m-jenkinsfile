@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh 'docker rm -f 5093616m-server' 
                 sh 'docker run -it -d -p 32500:80 --name 5093616m-server 5093616m-image'
-                sh 'docker exec -i 5093616m-server /usr/sbin/apache2/startup.sh'
+                sh 'docker exec -i 5093616m-server /usr/sbin service apache2 restart'
                 echo '5093616m-Stage 2: Server Setup Completed.'
             }
         }
